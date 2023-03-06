@@ -1,6 +1,6 @@
-Feature: json feature testing
+Feature: Json feature testing
 
-Scenario: json reader parser
+Scenario: Json reader parser
 
 * def jsonObject =
 """
