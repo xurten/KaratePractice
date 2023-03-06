@@ -1,6 +1,6 @@
 Feature: GET API feature
 
-Scenario: get user details
+Scenario: Get user details
 Given url 'https://gorest.co.in/public/v2/users'
 And path '771226'
 When method GET
@@ -14,7 +14,7 @@ Then status 200
 * match json_response.gender == 'female'
 * match json_response.status == 'active'
 
-Scenario: get user details - not found
+Scenario: Get user details - not found
 Given url 'https://gorest.co.in/public/v2/users'
 And path '30'
 When method GET
