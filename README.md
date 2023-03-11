@@ -1,4 +1,4 @@
-# KaratePractice
+# Karate practice
 Simple features with Karate framework for API testing(Java, Javascript, Json, API, eclipse) 
 
 *Tests for GET, POST, PUT, DELETE actions.*
