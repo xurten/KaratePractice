@@ -21,12 +21,12 @@ Background:
 Scenario: Update a user with the given data
 # 1 call
 Given path '/public/v2/users'
-And request request_payload
-And header Authorization = 'Bearer '+ token_id
+	And request request_payload
+	And header Authorization = 'Bearer '+ token_id
 When method POST
 Then status 201
-And match $.id == '#present'
-And match $.name == '#present'
+	And match $.id == '#present'
+	And match $.name == '#present'
 * print response
 
 # fetch the user id from the post call response
@@ -43,12 +43,12 @@ And match $.name == '#present'
  """
 * print new_request_payload 
 Given path '/public/v2/users/'+ user_id
-And request new_request_payload
-And header Authorization = 'Bearer '+ token_id
+	And request new_request_payload
+	And header Authorization = 'Bearer '+ token_id
 When method PUT
 Then status 200
-And match $.id == '#present'
-And match $.id == user_id
-And match $.name == '#present'
-And match $.email == request_payload.email
-* print response
+	And match $.id == '#present'
+	And match $.id == user_id
+	And match $.name == '#present'
+	And match $.email == request_payload.email
+	* print response

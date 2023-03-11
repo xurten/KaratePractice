@@ -11,10 +11,10 @@ Background:
 
 Scenario: Update the user with payload
 Given path '/public/v2/users/968785'
-And request request_payload
-And header Authorization = 'Bearer '+ token_id
+	And request request_payload
+	And header Authorization = 'Bearer '+ token_id
 When method PUT
 Then status 200
-And match $.id == '#present'
-And match $.name == '#present'
+	And match $.id == '#present'
+	And match $.name == '#present'
 * print response
