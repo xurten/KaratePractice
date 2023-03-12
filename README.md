@@ -1,8 +1,20 @@
 # Karate practice
-Simple features with Karate framework for API testing(Java, Javascript, Json, API, Cucumber, BDD, eclipse) 
 
-This repository contains tests for GET, POST, PUT, DELETE actions.
+This repository contains example test scenarios using Karate DSL for API testing. Repository contains tests for GET, POST, PUT, DELETE actions.
+(Java, Javascript, Json, API, Cucumber, BDD, eclipse) 
 
+# Getting Started
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
+
+# Prerequisites
+- Java 8 or higher
+- Maven
+
+# Installing
+Clone the repository:
+```
+git clone https://github.com/xurten/karate_practice.git
+```
 
 **Example scenario for delete action:**
 
@@ -34,7 +46,11 @@ Scenario: Delete a user with the given user id
 		And match $.message == 'Resource not found'
 ```
 
-
+# Running the Tests
+You can run the tests from the command line by running the following command from the root of the project:
+```
+mvn clean test
+```
 **All features are under src/test/java/features**
 
 
